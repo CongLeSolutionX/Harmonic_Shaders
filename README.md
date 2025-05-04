@@ -1,5 +1,13 @@
 # Harmonic Shaders ✨
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](LICENSE-CC-BY)
+
+---
+
+Copyright (c) 2025 Cong Le. All Rights Reserved.
+
+---
+
 **A mini-app showcasing a dynamic, interactive background effect blending SwiftUI with Metal Shaders.**
 
 [![Platform](https://img.shields.io/badge/platform-iOS-blue.svg)](https://developer.apple.com/ios/)
@@ -95,7 +103,9 @@ Feel free to experiment!
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details (Assuming you add an MIT license file).
+*   Code files within this repository (including the Mermaid.js diagram source files) are licensed under the [MIT License](LICENSE).
+*   Documentation and textual explanations (README.md and associated files) are licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE-CC-BY).
+
 
 ---
 
