@@ -19,8 +19,8 @@ Copyright (c) 2025 Cong Le. All Rights Reserved.
 Welcome to Harmonic Shaders! This project isn't just about a pretty visual; it's a demonstration of how to create deeply integrated, custom visual effects in SwiftUI by leveraging the power of Metal shaders. Press and hold the screen to see the waves transform!
 
 <!-- **(Consider adding a GIF demonstrating the effect here!)** -->
-
-<!-- ![Aura Flow Demo GIF](placeholder_aura_flow_demo.gif) -->
+![Harmonic ShadersDemo GIF](./ASSETS/Demo_Harmonic_Shaders.gif)
+<!-- ![Harmonic ShadersDemo GIF](placeholder_aura_flow_demo.gif) -->
 <!-- *Replace 'placeholder_aura_flow_demo.gif' with a path to your actual screen recording/GIF.* -->
 
 ---
