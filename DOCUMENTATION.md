@@ -194,7 +194,7 @@ graph TD
     *   `getColor`: To select a color for each wave layer (when interacting).
 
 ## 2.2. `harmonicColorEffect` Logic Flow
-
+## TODO: Break down this section into small parts to further explain the math equation using LaTex syntax
 This flowchart details the steps inside the main shader function.
 
 ```mermaid

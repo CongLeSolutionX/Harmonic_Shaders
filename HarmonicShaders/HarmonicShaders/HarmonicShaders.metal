@@ -116,7 +116,9 @@ float3 getColor(float t) {
     return float3(1.0); // White
 }
 
-/* Alternatively, use a procedural color calculation based on index `t`:
+/* TODO: More research and update this section,
+/// focusing on the math areas contributing to the related effects
+// Alternatively, use a procedural color calculation based on index `t`:
 float3 getColor(float t) {
   // Adjust t to typically be within a [0, 1] range if needed for trigonometric functions.
   // Example: Assuming t is the loop index and wavesCount is the total loop count.
@@ -134,7 +136,7 @@ float3 getColor(float t) {
 
 // MARK: - Main Shader Function
 
-/**
+/**TODO: More research on related math areas for this secton
  * @brief A Metal shader kernel function designed for SwiftUI's `colorEffect`.
  * It renders multiple layers of animated, glowing harmonic waves.
  * The appearance (frequency, glow, color) changes based on time and an interaction state (`mixCoeff`).
@@ -189,6 +191,7 @@ half4 harmonicColorEffect(
 
     // Iterate for the specified number of waves.
     // Using float for loop counter to match `wavesCount` type and avoid casting warnings.
+    // TODO: More research on type differences among float, float3, float4, half3, half4, Double, etc. between Metal ansd Swift environment
     for (float i = 0.0; i < wavesCount; i++) {
         // Calculate the phase shift for this specific wave layer.
         // Each layer `i` has a phase offset based on `i / wavesCount`, creating separation.
@@ -216,6 +219,7 @@ half4 harmonicColorEffect(
     // Clamp the final accumulated color to the valid [0.0, 1.0] range
     // to prevent potential over-bright pixels if glows overlap significantly.
     finalColor = clamp(finalColor, 0.0, 1.0);
+    //TODO: Research more on the spectrum of color range and spectrum of wave length
 
     // Convert the final float3 RGB color to half3 for efficiency,
     // and combine it with a full alpha channel (1.0h) to create the half4 result.
