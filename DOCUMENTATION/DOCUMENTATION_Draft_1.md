@@ -668,6 +668,37 @@ graph LR
 *   The view's bounding rectangle (`bounds`) is provided for coordinate normalization within the shader.
 
 
+```mermaid
+---
+title: ""
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%{
+  init: {
+    'flowchart': { 'htmlLabels': false},
+    'fontFamily': 'Monaco',
+    'themeVariables': {
+      'primaryColor': '#F5E3',
+      'primaryTextColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'fontSize': '20px'
+    }
+  }
+}%%
+flowchart LR
+    Closing_quote@{ shape: braces, label: "Math and code work together to bring interactive art to life!" }
+
+```
+
+
+
 ---
 **Licenses:**
 
