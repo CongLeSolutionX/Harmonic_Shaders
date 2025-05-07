@@ -7,9 +7,6 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 ---
 
 
-
-
-
 # A Diagrammatic Guide 
 > **Disclaimer:**
 >
