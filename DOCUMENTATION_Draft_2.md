@@ -49,7 +49,7 @@ config:
     'flowchart': { 'htmlLabels': false, 'curve': 'linear' },
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#F5E3',
+      'primaryColor': '#D5F5E3',
       'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
@@ -105,16 +105,16 @@ config:
 %% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
 %%{
   init: {
-    'flowchart': { 'htmlLabels': false, 'curve': 'linear' },
+    'flowchart': { 'htmlLabels': false, 'curve': 'basis' },
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryColor': '#D5F5E3',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
-      'secondaryColor': '#EBDEF0',
-      'secondaryTextColor': '#6C3483',
-      'secondaryBorderColor': '#A569BD',
+      'secondaryColor': '#EEF0',
+      'secondaryTextColor': '#6C83',
+      'secondaryBorderColor': '#A9BD',
       'fontSize': '15px'
     }
   }
@@ -148,8 +148,8 @@ config:
     'flowchart': { 'htmlLabels': false, 'curve': 'linear' },
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryColor': '#D5F5E3',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -261,8 +261,8 @@ config:
     'flowchart': { 'htmlLabels': false, 'curve': 'linear' },
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryColor': '#D5F5E3',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -302,7 +302,7 @@ config:
     'sequence': { 'mirrorActors': true, 'showSequenceNumbers': true },
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#2BB8',
+      'primaryColor': '#D5F5E3',
       'primaryBorderColor': '#7C0000',
       'lineColor': '#F8B229',
       'secondaryColor': '#6122',
@@ -371,8 +371,8 @@ config:
     'flowchart': { 'htmlLabels': false, 'curve': 'linear' },
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryColor': '#D5F5E3',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -489,8 +489,8 @@ config:
     'flowchart': { 'htmlLabels': false, 'curve': 'linear' },
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryColor': '#D5F5E3',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -501,8 +501,8 @@ config:
   }
 }%%
 flowchart TD
-    classDef glow fill:#e0fcff,stroke:#04c
-    classDef wave fill:#f0f0dc,stroke:#b37
+    classDef glow fill:#04c,stroke:#04c
+    classDef wave fill:#f21,stroke:#b37
     
     UV["Normalized Coordinates<br/>(uv_x, uv_y)"]:::glow --> harmSDF["Wave Distance:<br/> 'abs((uv_y - offset) + a*cos(f*uv_x + φ))'"]:::wave
     harmSDF --> glowFunc["Glow Intensity:<br/> 'glow = glowIntensity / pow(abs(distance), glowWidth)'"]:::glow
