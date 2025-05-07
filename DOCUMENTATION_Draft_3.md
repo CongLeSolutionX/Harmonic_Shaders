@@ -121,7 +121,7 @@ config:
     'fontFamily': 'Monaco',
     'themeVariables': {
       'primaryColor': '#F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -154,22 +154,51 @@ flowchart TD
 ### 2.2. Core Logic Flowchart of `harmonicColorEffect`
 
 ```mermaid
+---
+title: "Core Logic Flowchart of `harmonicColorEffect`"
+author: "Cong Le"
+version: "1.0"
+license(s): "MIT, CC BY 4.0"
+copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
+config:
+  layout: elk
+  theme: base
+---
+%%%%%%%% Mermaid version v11.4.1-b.14
+%%%%%%%% Available curve styles include the following keywords:
+%% basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, stepBefore.
+%%{
+  init: {
+    'flowchart': { 'htmlLabels': true, 'curve': 'linear' },
+    'fontFamily': 'Monaco',
+    'themeVariables': {
+      'primaryColor': '#FFBB',
+      'primaryTextColor': '#F8B229',
+      'lineColor': '#F8B229',
+      'primaryBorderColor': '#27AE60',
+      'secondaryColor': '#EBDEF0',
+      'secondaryTextColor': '#6C3483',
+      'secondaryBorderColor': '#A569BD'
+    }
+  }
+}%%
 flowchart TD
-    Start["Start harmonicColorEffect"] --> GetInputs["Receive inputs: pos, color, bounds, wavesCount, time, amplitude, mixCoeff"]
-    GetInputs --> NormalizeCoords["Normalize coordinates:\n$$uv = \\frac{pos}{(width, height)} - (0.5, 0.5)$$"]
-    NormalizeCoords --> ComputeParams["Compute:\n$$a = \\cos(3\\cdot uv_x) \\times amplitude \\times 0.2$$\n$$offset = \\sin(12\\cdot uv_x + time) \\times a \\times 0.1$$"]
-    ComputeParams --> InterpolateParams["Interpolate via mixCoeff:\n$$frequency = mix(3,12,mixCoeff)$$\n$$ glowWidth = mix(0.6,0.9,mixCoeff)$$\n$$ glowIntensity = mix(0.02,0.01,mixCoeff)$$"]
+    Start["Start harmonicColorEffect"] --> GetInputs["Receive inputs:<br/> pos, color, bounds, wavesCount, time, amplitude, mixCoeff"]
+    GetInputs --> NormalizeCoords["Normalize coordinates:<br/>$$uv = \\frac{pos}{(width, height)} - (0.5, 0.5)$$"]
+    NormalizeCoords --> ComputeParams["Compute:<br/>$$a = \\cos(3\\cdot uv_x) \\times amplitude \\times 0.2$$<br/>$$offset = \\sin(12\\cdot uv_x + time) \\times a \\times 0.1$$"]
+    ComputeParams --> InterpolateParams["Interpolate via mixCoeff:<br/>$$frequency = mix(3,12,mixCoeff)$$<br/>$$glowWidth = mix(0.6,0.9,mixCoeff)$$<br/>$$ glowIntensity = mix(0.02,0.01,mixCoeff)$$"]
     InterpolateParams --> InitColor["Initialize finalColor = float3(0.0)"]
     InitColor --> LoopStart["For i in [0, wavesCount):"]
-    LoopStart --> PhaseCalc["Calculate phase:\n$$ phase = time + i \\times \\frac{\\pi}{wavesCount} $$"]
+    LoopStart --> PhaseCalc["Calculate phase:<br/>$$phase = time + i \\times \\frac{\\pi}{wavesCount}$$"]
     PhaseCalc --> CalcSDF["Calculate sdfDist via harmonicSDF(uv, a, offset, frequency, phase)"]
     CalcSDF --> CalcGlow["Calculate glowDist = glow(sdfDist, glowWidth, glowIntensity)"]
-    CalcGlow --> WaveColor["Determine waveColor:\n$$ waveColor = mix(\\mathbf{1}, getColor(i), mixCoeff) $$"]
-    WaveColor --> Accumulate["Accumulate:\n$$ finalColor += waveColor \\times glowDist $$"]
+    CalcGlow --> WaveColor["Determine waveColor:<br/>$$waveColor = mix(\\mathbf{1}, getColor(i), mixCoeff)$$"]
+    WaveColor --> Accumulate["Accumulate:<br/>$$finalColor += waveColor \\times glowDist$$"]
     Accumulate --> LoopEnd["End loop when i == wavesCount"]
-    LoopEnd --> ClampFinal["Clamp finalColor:\n$$ finalColor = clamp(finalColor, 0, 1) $$"]
-    ClampFinal --> ReturnColor["Return color:\n$$ \\text{half4}(finalColor, 1.0) $$"]
+    LoopEnd --> ClampFinal["Clamp finalColor:<br/>$$finalColor = clamp(finalColor, 0, 1)$$"]
+    ClampFinal --> ReturnColor["Return color:<br/>$$\\text{half4}(finalColor, 1.0)$$"]
     ReturnColor --> End["End"]
+
 ```
 
 ---
@@ -248,7 +277,7 @@ config:
     'fontFamily': 'Monaco',
     'themeVariables': {
       'primaryColor': '#F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -389,7 +418,7 @@ config:
     'fontFamily': 'Monaco',
     'themeVariables': {
       'primaryColor': '#F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -471,7 +500,7 @@ config:
     'fontFamily': 'Monaco',
     'themeVariables': {
       'primaryColor': '#F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
