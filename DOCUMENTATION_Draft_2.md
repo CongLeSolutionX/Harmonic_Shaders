@@ -50,7 +50,7 @@ config:
     'fontFamily': 'Monaco',
     'themeVariables': {
       'primaryColor': '#F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -555,7 +555,7 @@ flowchart LR
 
 ## References
 
-- [Metal Shading Language Specification (Apple Docs)](https://developer.apple.com/documentation/metal/metal_shading_language_language_specification)
+- [Metal Shading Language Specification (Apple Docs)](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf)
 - [SwiftUI ShaderLibrary Documentation](https://developer.apple.com/documentation/swiftui/shaderlibrary)
 - Harmonic SDF equations inspired by standard distance field and procedural graphics techniques.
 
