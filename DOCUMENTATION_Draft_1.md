@@ -53,8 +53,8 @@ config:
     'flowchart': { 'htmlLabels': true, 'curve': 'linear' },
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#D5F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryColor': '#D53',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -91,7 +91,7 @@ graph TD
     CE -- Renders --> BG
 
     style SwiftUI_Layer fill:#e799f,stroke:#0050b3,stroke-width:2px
-    style Metal_Layer fill:#fbe6,stroke:#d4b106,stroke-width:2px
+    style Metal_Layer fill:#e122,stroke:#d4b106,stroke-width:2px
     
 ```
 
@@ -134,7 +134,7 @@ config:
     'fontFamily': 'Monaco',
     'themeVariables': {
       'primaryColor': '#D5F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -172,12 +172,12 @@ graph TD
     HCE --> FINAL["Step 5:<br/>Finalize and Return Color"]
     FINAL --> CLAMP["clamp()"]
 
-    style HCE fill:#0f0,stroke:#333,stroke-width:2px
-    style SDF fill:#e6fb,stroke:#006d75,stroke-width:1px
+    style HCE fill:#F11,stroke:#333,stroke-width:2px
+    style SDF fill:#6fb,stroke:#006d75,stroke-width:1px
     style GLW fill:#efb,stroke:#006d75,stroke-width:1px
     style GC fill:#6fb,stroke:#006d75,stroke-width:1px
     style MIXF fill:#ff6,stroke:#c41d7f,stroke-width:1px
-    style MIXC fill:#f0f6,stroke:#c41d7f,stroke-width:1px
+    style MIXC fill:#f22,stroke:#c41d7f,stroke-width:1px
     
 ```
 
@@ -214,7 +214,7 @@ config:
     'fontFamily': 'Monaco',
     'themeVariables': {
       'primaryColor': '#D5F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -244,8 +244,8 @@ flowchart TD
     ClampColor --> ReturnColor["Return 'half4(half3(finalColor), 1.0h)'"]
     ReturnColor --> End["End"]
 
-    style Start fill:#ddda,stroke:#155724
-    style End fill:#f8da,stroke:#721c24
+    style Start fill:#2FF9,stroke:#155724
+    style End fill:#f22a,stroke:#721c24
     
 ```
 
@@ -286,7 +286,7 @@ config:
     'fontFamily': 'Monaco',
     'themeVariables': {
       'primaryColor': '#D5F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -310,7 +310,7 @@ graph LR
     end
     Absolute --> Output["Return Distance"]
 
-    style harmonic_SDF fill:#fd2,stroke:#b8860b
+    style harmonic_SDF fill:#f2d2,stroke:#b8860b
     
 ```
 
@@ -338,7 +338,7 @@ config:
     'fontFamily': 'Monaco',
     'themeVariables': {
       'primaryColor': '#D5F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -357,7 +357,7 @@ graph LR
     end
     Division --> Output["Return Glow Intensity"]
 
-    style glow fill:#ad2,stroke:#b8860b
+    style glow fill:#a2d2,stroke:#b8860b
     
 ```
 
@@ -385,7 +385,7 @@ config:
     'fontFamily': 'Monaco',
     'themeVariables': {
       'primaryColor': '#D5F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -417,7 +417,7 @@ graph LR
         ColorDefault --> Output
     end
     
-    style getColor fill:#ad2,stroke:#b8860b
+    style getColor fill:#a2d2,stroke:#b8860b
     
 ```
 
@@ -449,7 +449,7 @@ config:
     'fontFamily': 'Monaco',
     'themeVariables': {
       'primaryColor': '#D5F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -480,10 +480,10 @@ graph TD
         FGPadding -- "modifier" --> FGHitTest["'.allowsHitTesting(false)'"]
     end
 
-    style Root fill:#dff,stroke:#0050b3
-    style ZStack_Layers fill:#2EEf,stroke:#69c0ff
-    style BG fill:#ade6, stroke:#4682b4
-    style FG fill:#ade6, stroke:#4682b4
+    style Root fill:#df22,stroke:#0050b3
+    style ZStack_Layers fill:#22Ef,stroke:#69c0ff
+    style BG fill:#a16, stroke:#4682b4
+    style FG fill:#a12, stroke:#4682b4
     
 ```
 
@@ -616,7 +616,7 @@ config:
     'fontFamily': 'Monaco',
     'themeVariables': {
       'primaryColor': '#D5F5E3',
-      'primaryTextColor': '#145A32',
+      'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#EBDEF0',
@@ -653,9 +653,9 @@ graph LR
     C1 --> P4
     C2 --> P5
 
-    style SwiftUI_State fill:#e7ff,stroke:#0050b3
-    style Constants_View_Data fill:#fafa,stroke:#8c8c8c
-    style Shader_Parameters fill:#ffB2,stroke:#d4b106
+    style SwiftUI_State fill:#e222,stroke:#0050b3
+    style Constants_View_Data fill:#f2dd,stroke:#8c8c8c
+    style Shader_Parameters fill:#F22F,stroke:#d4b106
     
 ```
 
