@@ -120,7 +120,7 @@ config:
     'flowchart': { 'htmlLabels': false, 'curve': 'linear' },
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#F5E3',
+      'primaryColor': '#22BB',
       'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
@@ -276,7 +276,7 @@ config:
     'flowchart': { 'htmlLabels': false, 'curve': 'linear' },
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#F5E3',
+      'primaryColor': '#22BB',
       'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
@@ -324,7 +324,7 @@ flowchart TD
 
 ```mermaid
 ---
-title: "CHANGE_ME_DADDY"
+title: "State Management and Interaction Sequence"
 author: "Cong Le"
 version: "0.1"
 license(s): "MIT, CC BY 4.0"
@@ -417,7 +417,7 @@ config:
     'flowchart': { 'htmlLabels': false, 'curve': 'linear' },
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#F5E3',
+      'primaryColor': '#22BB',
       'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
@@ -499,7 +499,7 @@ config:
     'flowchart': { 'htmlLabels': false, 'curve': 'linear' },
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#F5E3',
+      'primaryColor': '#22BB',
       'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
