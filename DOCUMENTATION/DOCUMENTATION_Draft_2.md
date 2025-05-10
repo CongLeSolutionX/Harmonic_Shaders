@@ -520,35 +520,7 @@ flowchart TD
 This architecture demonstrates **state-driven, GPU-accelerated, interactive animation** using SwiftUI and Metal in harmony. The visuals are not static—they are shaped in real time through mathematical equations and user touch, with every parameter and color calculated per pixel for beautifully smooth and performant effects.
 
 
-
-```mermaid
----
-title: ""
-author: "Cong Le"
-version: "1.0"
-license(s): "MIT, CC BY 4.0"
-copyright: "Copyright (c) 2025 Cong Le. All Rights Reserved."
-config:
-  layout: elk
-  theme: base
----
-%%%%%%%% Mermaid version v11.4.1-b.14
-%%{
-  init: {
-    'flowchart': { 'htmlLabels': false},
-    'fontFamily': 'Monaco',
-    'themeVariables': {
-      'primaryColor': '#F5E3',
-      'primaryTextColor': '#F8B229',
-      'primaryBorderColor': '#27AE60',
-      'fontSize': '20px'
-    }
-  }
-}%%
-flowchart LR
-    Closing_quote@{ shape: braces, label: "Math and code work together to bring interactive art to life!" }
-
-```
+----
 
 
 
@@ -574,12 +546,16 @@ config:
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#81c784',
       'secondaryTextColor': '#6C3483',
-      'fontSize': '15px'
+      'fontSize': '20px'
     }
   }
 }%%
-flowchart TD
+flowchart LR
     My_Meme@{ img: "https://github.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/blob/Designing_graphic_syntax/MY_MEME_ICONS/Orange-Cloud-Search-Icon-Base-Color-Black-1024x1024.png?raw=true", label: "Ăn uống gì chưa ngừi đẹp?", pos: "b", w: 200, h: 150, constraint: "on" }
+
+    Closing_quote@{ shape: braces, label: "Math and code work together to bring interactive art to life!" }
+
+Closing_quote --- My_Meme
 
 ```
 
