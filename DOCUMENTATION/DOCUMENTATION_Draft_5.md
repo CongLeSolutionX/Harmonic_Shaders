@@ -519,6 +519,7 @@ This document has presented:
 
 All together, these diagrams and equations convey the concepts and internal complexities of the dynamic harmonic visual effect implemented through SwiftUI and Metal.
 
+---
 
 
 ```mermaid
@@ -542,6 +543,7 @@ config:
       'primaryBorderColor': '#27AE60',
       'secondaryColor': '#81c784',
       'secondaryTextColor': '#6C3483',
+      'lineColor': '#F8B229',
       'fontSize': '20px'
     }
   }
